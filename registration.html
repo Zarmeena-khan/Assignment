@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label>Favorite Programming Languages:</label>
+        <input type="checkbox" id="html" name="lang" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="lang" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="lang" value="js">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="lahore">Lahore</option>
+            <option value="karachi">Karachi</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="multan">Multan</option>
+        </select>
+        <br><br>
+
+        <label for="about">About Yourself:</label>
+        <br>
+        <textarea id="about" name="about" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
