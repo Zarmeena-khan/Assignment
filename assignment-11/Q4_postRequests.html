@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Request Practice</title>
+    <link rel="stylesheet" href="Q4_postRequests.css">
+</head>
+<body>
+    <h1>API Request Practice</h1>
+
+    <form id="postForm">
+        <label>Title</label>
+        <input type="text" id="title" required>
+
+        <label>Content</label>
+        <textarea id="body" rows="4" required></textarea>
+
+        <label>User ID</label>
+        <input type="number" id="userId" value="1" required>
+
+        <button type="submit">Submit POST</button>
+    </form>
+
+    <div class="actions">
+        <button id="putBtn">Send PUT to /posts/1</button>
+        <button id="patchBtn">Send PATCH to /posts/1</button>
+        <button id="deleteBtn">Send DELETE to /posts/1</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="Q4_postRequests.js"></script>
+</body>
+</html>

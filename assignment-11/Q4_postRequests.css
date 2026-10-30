@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #1e3a5f;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2a9d8f;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    background: #e76f51;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-family: monospace;
+    font-size: 14px;
+}

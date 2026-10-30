@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API CRUD Practice</title>
+    <link rel="stylesheet" href="Q1_crud.css">
+</head>
+<body>
+    <header>
+        <h1>Fetch API CRUD Practice</h1>
+        <p>GET · POST · PUT · PATCH · DELETE</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add a new post (POST)</h2>
+            <form id="addPostForm">
+                <label>Post Title</label>
+                <input type="text" id="title" placeholder="Post title" required>
+
+                <label>User ID</label>
+                <input type="number" id="userId" value="1" required>
+
+                <label>Post Content</label>
+                <textarea id="body" placeholder="Write post content..." rows="4" required></textarea>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn-add">Add Post — POST</button>
+                    <button type="button" id="reloadBtn" class="btn-reload">Reload Posts — GET</button>
+                </div>
+            </form>
+            <div id="message"></div>
+        </section>
+
+        <section>
+            <h2>Posts</h2>
+            <div id="postsContainer" class="posts-grid"></div>
+        </section>
+    </main>
+
+    <script src="Q1_crud.js"></script>
+</body>
+</html>
